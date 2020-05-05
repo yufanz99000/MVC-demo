@@ -1,0 +1,25 @@
+#app4 {
+
+}
+@keyframes animation{
+    0%{
+        background: pink;
+    }
+    100%{
+        background: lavender;
+    }
+}
+#app4 .circle{
+    width: 22vw;
+    height: 22vw;
+    border-radius: 50%;
+    border: 2px solid pink;
+    
+}
+
+/* 在被鼠标移入激活时样式才会有变化 */
+#app4 .circle.active {
+    animation: animation 1s 
+        infinite alternate linear
+    /* alternate是来回的 */
+}
